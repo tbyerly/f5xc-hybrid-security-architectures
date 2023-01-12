@@ -1,5 +1,5 @@
 #Global
-project_prefix = "byerly_nap"
+project_prefix = "byerly-nap"
 resource_owner = "t.byerly"
 
 #AWS INFRA
