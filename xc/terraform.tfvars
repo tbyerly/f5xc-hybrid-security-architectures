@@ -3,7 +3,7 @@ api_url = "https://tme-lab-works.console.ves.volterra.io/api"
 xc_namespace = "byerly"
 
 #XC LB
-app_domain = "byerlynapv2.sr.f5-demo.com"
+app_domain = "byerlynap.tme-lab-works.distributedappsonvolt.org"
 
 #XC WAF
 xc_waf_blocking = true
