@@ -67,7 +67,7 @@ resource "aws_iam_role" "workernodes" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
   role    = aws_iam_role.workernodes.name
  }
-
+/*
  resource "aws_iam_policy" "workernodes_ebs_policy" {
   name = format("%s-ebs_csi_driver-%s", local.project_prefix, local.build_suffix)
 
@@ -97,8 +97,8 @@ resource "aws_iam_role" "workernodes" {
 }
 POLICY
 }
-
+*/
 resource "aws_iam_role_policy_attachment" "workernodes-AmazonEBSCSIDriver" {
-  policy_arn = aws_iam_policy.workernodes_ebs_policy.arn
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEBSCSIDriverPolicy"
   role       = aws_iam_role.workernodes.name
 }
